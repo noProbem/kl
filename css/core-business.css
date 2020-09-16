@@ -1,0 +1,358 @@
+
+/*冷链模块 start*/
+.core-buisness-cont-1 {
+    overflow: hidden;
+}
+
+.core-til-bg1, .core-til-bg2, .core-til-bg3 {
+    height: 300px;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.core-til-bg1 {
+    background-image: url(../images/core-til-bg1.jpg);
+}
+.core-til-bg2 {
+    background-image: url(../images/core-til-bg2.jpg);
+}
+.core-til-bg3 {
+    background-image: url(../images/core-til-bg3.jpg);
+}
+
+
+.partner,.partner .cont-til{
+	padding-bottom: 40px;
+}
+
+.partner ul {
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.partner ul li {
+    width: 20%;
+    float: left;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.partner ul li img {
+    width: 83.333%;
+}
+/*斜线背景*/
+.core-buisness-cont-1 .tilt-block {
+    top: unset;
+    bottom: 0;
+    height: 60%;
+    transform: skewY(-30deg) translateY(50%);
+}
+.core-buisness-cont-1 .tilt-block2 {
+    position: absolute;
+    width: 460px;
+    height: 200px;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    background-color: #e77f04;
+    transform: skewY(-30deg) translate(0, 90%);
+}
+
+/*化工模块 start*/
+/*斜线背景 start*/
+.core-buisness-cont-2 .tilt-block {
+    width: 50%;
+    height: 50%;
+    transform: skewY(-30deg) translateY(-50%);
+}
+.core-buisness-cont-2 .line-group.lb {
+    left: 0;
+    bottom: 30px;
+}
+.core-buisness-cont-2 .line-group.lb .line {
+    height: 12px;
+    width: 130px;
+    transform: translate3d(-130px, 0, 0);
+    background-color: #006bbd;
+}
+.core-buisness-cont-2 .line-group.lb .line+.line {
+    margin-top: 10px;
+}
+
+.core-buisness-cont-2 .line-group.lb .line:first-child {
+    width: 90px;
+    height: 30px;
+    background-color: #dc3b43;
+}
+.core-buisness-cont-2 .line-group.lb .line:nth-child(2) {
+    margin-top: 0;
+}
+
+.core-buisness-cont-2 .line-group.lb.active .line {
+    transform: translate3d(0, 0, 0);
+}
+.core-buisness-cont-2 .line-group.lb.active .line:first-child {
+    transform: translate3d(130px, 0, 0);
+}
+
+.core-buisness-cont-2 .tilt-block2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    z-index: 3;
+    background-color: #f6f6f6;
+    transform: skewY(-30deg) translateY(90%);
+}
+.core-buisness-cont-2 .line-group.rt {
+    right: 240px;
+    top: -60px;
+}
+.core-buisness-cont-2 .line-group.rt .line {
+    height: 60px;
+    width: 240px;
+    transform: translate3d(240px, 0, 0);
+    background-color: #e77f04;
+}
+/*普运&成功案例 start*/
+.solutions-bg {
+    padding-bottom: 180px;
+}
+.solutions-bg>.cont-til{
+	padding:100px 20px 40px;
+}
+.solution-wrap {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 180px;
+    position: relative;
+}
+.hexagon-nav li {
+    position: absolute;
+    width: 296px;
+    height: 293px;
+    cursor: pointer;
+    font-size: 1.125rem;
+    color: #fff;
+    z-index: 10;
+}
+.hexagon-nav li:after {
+    content: '';
+    width: 296px;
+    height: 293px;
+    background: url(../images/hexagon-bg.png) no-repeat;
+    position: absolute;
+    left: 50%;
+    margin-left: -148px;
+    top: 0;
+}
+.hexagon-nav li.cur:after, .hexagon-nav li:hover:after {
+    background-image: url(../images/hexagon-bg-hover.png);
+}
+.hexagon-nav li.item-1 {
+    top: -145.44863px;
+    left: 56.00001px;
+}
+.hexagon-nav li.item-2 {
+    top: -145.4482px;
+    left: 396.00189px;
+}
+.hexagon-nav li.item-3 {
+    top: 149px;
+    left: 566px;
+}
+.hexagon-nav li.item-4 {
+    top: 443.44864px;
+    left: 396px;
+}
+.hexagon-nav li.item-5 {
+    top: 443.44864px;
+    left: 56px;
+}
+.hexagon-nav li.item-6 {
+    top: 149.0px;
+    left: -114.0px;
+}
+.hexagon-nav li .inner {
+    width: 106px;
+    margin: 0 auto;
+    padding-top: 66px;
+    text-align: center;
+    position: relative;
+    z-index: 12;
+}
+.hexagon-nav li .inner span {
+    display: block;
+    width: 100%;
+}
+.hexagon-con {
+    position: relative;
+}
+.hexagon-con .hexagon-mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../images/hexagon-mask.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hexagon-con .hexagon-mask .inner {
+    width: 380px;
+    margin: 0 auto;
+    color: #fff;
+}
+.hexagon-con .hexagon-mask .inner h4 {
+    font-size: 1.25rem;
+    padding-bottom: 18px;
+}
+.hexagon-con .hexagon-mask .inner p {
+    font-size: 1rem;
+    padding: 10px 0;
+}
+.hexagon-con .hexagon-mask .inner .more-line-btn {
+    margin-top: 12px;
+}
+/*斜线背景*/
+.core-buisness-cont-3 .tilt-block {
+    top: unset;
+    bottom: 0;
+    height: 110%;
+    transform: skewY(-30deg) translateY(50%);
+}
+.core-buisness-cont-3 .tilt-block2 {
+    position: absolute;
+    width: 460px;
+    height: 200px;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    background-color: #006bbd;
+    transform: skewY(-30deg) translate(0, 90%);
+}
+
+@media screen and (max-width: 768px){
+	.core-til-bg1, .core-til-bg2, .core-til-bg3 {
+	    height: 180px;
+	    background-size: 1536px 180px;
+	}
+	.partner,.partner .cont-til{
+		padding-bottom: 1.5rem;
+	}
+	.core-buisness-cont-1 .tilt-block2 {
+	    width: 240px;
+	    height: 100px;
+	}
+	.core-buisness-cont-2 .line-group.lb {
+	    left: -90px;
+	    bottom: 15px;
+	}
+	.core-buisness-cont-2 .line-group.lb .line:nth-child(1) {
+	    height: 15px;
+	}
+	.core-buisness-cont-2 .line-group.rt {
+	    right: 50px;
+	    top: -20px;
+	}
+	.core-buisness-cont-2 .line-group.rt .line {
+	    height: 20px;
+	}
+	.solutions-bg>.cont-til {
+	    padding:4rem 20px 1.5rem;
+	}
+	.solution-wrap {
+	    margin-top: 0;
+	    padding: 0 20px;
+	}
+	.hexagon-nav li.item-1, .hexagon-nav li.item-2, .hexagon-nav li.item-3, .hexagon-nav li.item-4, .hexagon-nav li.item-5, .hexagon-nav li.item-6 {
+	    top: unset;
+	    left: unset;
+	    display: inline-block;
+	    position: relative;
+	    width: 32%;
+	}
+	.hexagon-nav li {
+	    font-size: .9375rem;
+	    width: 148px;
+	    height: 117px;
+	    margin-left: 0.2%;
+	    margin-right: 0.2%;
+	}
+	.hexagon-nav li .inner {
+	    width: 106px;
+	    margin: 0 auto;
+	    padding-top: 30px;
+	    text-align: center;
+	}
+	.hexagon-nav li.cur:after, .hexagon-nav li:after {
+	    width: 148px;
+	    height: 146px;
+	    background-size: cover;
+	    margin-left: -74px;
+	}
+	.hexagon-nav+.hexagon-con {
+	    margin-top: 1.2em;
+	}
+	.hexagon-con .hexagon-mask {
+		background: none
+	}
+	.hexagon-con .hexagon-mask:after,
+	.hexagon-con .hexagon-mask:before {
+		content: '';
+		width: 60px;
+		height: 30px;
+		background: #f6f6f6;
+		position: absolute
+	}
+	.hexagon-con .hexagon-mask:before {
+		top: 0;
+		left: 0;
+		transform: rotate(-30deg) translate(-8px, -20px)
+	}
+	.hexagon-con .hexagon-mask:after {
+		bottom: 0;
+		right: 0;
+		transform: rotate(-30deg) translate(8px, 20px)
+	}
+	.hexagon-con .hexagon-mask .inner {
+		width: 94%
+	}
+	.hexagon-con .hexagon-mask .inner h4 {
+		font-size: 1.125rem;
+		padding-bottom: 12px
+	}
+	.hexagon-con .hexagon-mask .inner p {
+		font-size: .9375rem;
+		padding-bottom: 6px
+	}
+	.hexagon-con .hexagon-mask .inner .more-line-btn {
+		margin-top: 8px
+	}
+	.core-buisness-cont-3 .tilt-block2 {
+	    width: 230px;
+	    height: 100px;
+	}
+	.solutions-bg {
+	    padding-bottom: 70px;
+	}
+}
+
+@media screen and (max-width:480px) {
+	.banner-container .core-kv-bar {
+	    bottom: 60px;
+	}
+	.sub-nav.core-sub a .icon-sub-nav {
+	    display: none;
+	}
+}
