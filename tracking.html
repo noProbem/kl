@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="keywords" content="希杰物流，荣庆物流" />
+		<meta name="description" content="荣庆物流-中国智慧物流的领跑者" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>荣庆物流-中国智慧物流的领跑者</title>
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" rel="stylesheet" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet" />
+		<link href="css/base.css" rel="stylesheet" />
+		<link href="css/public.css" rel="stylesheet" />
+		<link href="css/tracking.css" rel="stylesheet" />
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+	      <script>
+			  //location.href = "browser.html";
+			  window.open("browser.html");
+		  </script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<!--header start-->
+		<header class="header-wrap"></header>
+		<!--header end-->
+		<script>
+			function searchKeyup(event) {
+				if(event.keyCode === "13" || event.which === "13") {
+					//回车执行查询
+					location = 'search-result.html';
+				}
+			}
+		</script>
+		<!--header end-->
+		<!--banner start-->
+		<div class="column-banner banner-order-tracking">
+			<div class="txt-box animated fadeInUp">
+				<h2>货物追踪</h2>
+				<p class="txt">快速查询物流信息</p>
+			</div>
+		</div>
+		<!--content start-->
+		<div class="wrap clearfix pb40">
+			<div class="order-search-wrap">
+				<div class="text-tips">
+					<i class="icon-tracking"></i>
+					<p>请输入运单号或客户订单号进行查询，各单号通过换行进行区分（最多可输入50个单号进行查询，在线电子签单保留3年以内图像查询）</p>
+				</div>
+				<div class="sear-inner clearfix">
+					<div class="item">
+						<div class="input-wrap">
+							<div class="inner">
+								<textarea id="textarea" name="" placeholder="请输入运单号或客户订单号" rows="" cols="" class="textarea"></textarea>
+								<a href="javascript:void(0)" class="sear-btn"><i class="icon-sear-blue"></i></a>
+							</div>
+						</div>
+						<a href="javascript:void(0)" class="reset">重置</a>
+					</div>
+					<div class="item viri-code-item">
+						<div class="input-wrap">
+							<div class="inner">
+								<input name="" placeholder="请输入验证码" rows="" id="txtCode" cols="" class="input"></input>
+							</div>
+						</div>
+						<div class="viri-code-img">
+							<img id="img" style="cursor:pointer" alt="点击更新验证码" src="images/verify_code.ashx" />
+						</div>
+					</div>
+				</div>
+				<!--斜线背景 start-->
+				<div class="tilt-bg-box">
+					<div class="line-group rt">
+						<div class="line"></div>
+						<div class="line delay-100"></div>
+						<div class="line delay-200"></div>
+					</div>
+					<div class="line-group lb">
+						<div class="line"></div>
+					</div>
+				</div>
+				<!--// 斜线背景 end-->
+			</div>
+		</div>
+		<!--底部ad start-->
+		<div class="bot-kv">
+			<div class="mob-show">
+				<img src="images/mob-bot-kv.jpg" alt="" />
+			</div>
+		</div>
+		<!--// 底部ad end-->
+		<!--footer start-->
+		<footer class="footer-wrap"></footer>
+		<!--footer end-->
+		<!--copy start-->
+		<div class="copyright clearfix"></div>
+		<!--copy end-->
+		<!--全局菜单弹出框 start-->
+		<div class="siteMap-wrap" id="sm-modal"></div>
+		<!--toTop start-->
+		<div class="sitefloat-bar"></div>
+	</body>
+
+</html>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+<script src="js/swiper.animate1.0.3.min.js"></script>
+<script src="js/public.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".header-wrap").load("public/header.html",function(){
+			$(".nav-box .order-drop .order-drop-con a").css("background-image","url(images/arrow-r.png)");
+		});
+	})
+</script>
